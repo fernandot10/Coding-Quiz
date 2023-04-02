@@ -35,7 +35,7 @@
   ![highscores](./Assets/images/highscores.PNG)
 
 
-  - [DEPLOYED]()
+  - [DEPLOYED](https://fernandot10.github.io/Coding-Quiz/)
   - [REPO](https://github.com/fernandot10/Coding-Quiz)
 
   ## License 
