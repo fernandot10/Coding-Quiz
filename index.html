@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./Assets/style.css" />
+</head>
+
+<body>
+
+    <button onclick="viewScores()" id="view-highscores">View Highscores</button>
+
+    <div id="timer">Time:<span id="time">1:00</span></div>
+
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>Coding Quiz</h1>
+            <p id="intro">
+                Take the coding Quiz! Wrong answers -10 seconds!
+            </p>
+            <button onclick="startQuiz()" id="start-btn">START</button>
+        </div>
+
+        <div id="question-screen" class="hide">
+            <h2 id="question"></h2>
+            <button class="btn-style" onclick="quizSelection(0)" id="btn-a"></button>
+            <button class="btn-style" onclick="quizSelection(1)" id="btn-b"></button>
+            <button class="btn-style" onclick="quizSelection(2)" id="btn-c"></button>
+            <button class="btn-style" onclick="quizSelection(3)" id="btn-d"></button>
+
+            <hr>
+            <h3 id="answer-output"></h3>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h1 class="done">Done!</h1>
+            <p>
+                Please Enter initials:
+                <input type="text" id="initials" max="3" />
+                <button onclick="onSubmit()" id="submit-btn">Submit</button>
+            </p>
+        </div>
+
+        <div id="reset-screen">
+            <ol id="highScores"></ol>
+            <button class="reset-btn-style" onclick="clearHighScores()">Clear Highscores</button>
+            <button class="reset-btn-style" onclick="restartQuiz()">Go Back</button>
+
+            <script src="./Assets/script.js"></script>
+</body>
+
+</html>
