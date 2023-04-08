@@ -23,17 +23,7 @@
   ## Usage
 
   - Start Screen
-  ![startScreen](./Assets/images/startScreen.PNG)
-
-  - Correct Answer
-  ![correctAnswer](./Assets/images/correctAnswer.PNG)
-
-  - Wrong Answer 
-  ![wrongAsnwer](./Assets/images/wrongAnswer.PNG)
-
-  - Highscores
-  ![highscores](./Assets/images/highscores.PNG)
-
+  ![startScreen](./Assets/codingQuizSS.png)
 
   - [DEPLOYED](https://fernandot10.github.io/Coding-Quiz/)
   - [REPO](https://github.com/fernandot10/Coding-Quiz)
