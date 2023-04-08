@@ -98,7 +98,10 @@ function showQuestions() {
 };
 
 
+var isPaused = false;
 let time = 60;
+
+
 function setTimer() {
     let countdownInterval = setInterval(function () {
         time--;
@@ -112,6 +115,10 @@ function setTimer() {
     }, 1000);
 };
 
+function pausedTimer() {
+    isPaused = true;
+};
+
 
 choices.addEventListener("click", function (event) {
     var selection = event.target;
@@ -122,7 +129,6 @@ choices.addEventListener("click", function (event) {
         time -= 10;
     }
     index++;
-
     if (timer <= 0 || questions[index] === questions.length) {
         end()
     } else {
